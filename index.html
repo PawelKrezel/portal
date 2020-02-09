@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   	<script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>portal</title>
+</head>
+<body>
+	<section id="jeden">
+		<header class="col-sm-12">
+			<p id="nazwa">Interonet.pl</p>
+		</header>
+	</section>
+
+	<section id="dwa">
+		<nav id="nawigacja">
+			<button onclick="wstecz()" class="btn btn-default"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-skip-back"><polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line></svg></button>
+			<button onclick="wroc()" class="btn btn-default"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button>
+			<button onclick="losuj()" class="btn btn-default"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></button>
+			<button onclick="dalej()" class="btn btn-default"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-skip-forward"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line></svg></button>
+		</nav>
+
+		<article>
+			<div id="menu">
+				<div class="div_menu" onclick="pokaz(1)"><section><img src="grafika/1.png"><br><p>kotki to takie słodziaki, dowiedz się więcej na ich temat!</p></section></div>
+				<div class="div_menu" onclick="pokaz(2)"><img src="grafika/4.png"><br><p>czy wiedziałeś TO na temat psów?</p></div>
+				<div class="div_menu" onclick="pokaz(3)"><img src="grafika/7.png"><br><p>co to za udomowione szczury?</p></div>
+				<div class="div_menu" onclick="pokaz(4)"><img src="grafika/10.png"><br><p>dowiedz się tego czego nie wiedziałeś odnośnie tych czworonogów!</p></div>
+				<div class="div_menu" onclick="pokaz(5)"><img src="grafika/13.png"><br><p>czy wiesz co to za zwierzę?</p></div>
+				<div class="div_menu" onclick="pokaz(6)"><img src="grafika/16.png"><br><p>wiedziałeś jak inaczej nazywa się ta urocza istota?</p></div>
+				<div class="div_menu" onclick="pokaz(7)"><img src="grafika/19.png"><br><p>dowiedz się czegoś więcej na temat tych słodziaków!</p></div>
+				<div class="div_menu" onclick="pokaz(8)"><img src="grafika/22.png"><br><p>czego jeszcze nie wiedziałeś o lemurach?</p></div>
+				<div class="div_menu" onclick="pokaz(9)"><img src="grafika/25.png"><br><p>dorzuć swoje 3 grosze, czemu nie</p></div>
+
+			</div>
+
+			<div class="container" id="1" style="display: none;">
+				<div class="row header">
+					<h1>wpis o kotkach<small> bo zwykłe wiadomości są nudne</small></h1>
+				</div>
+
+				<div class="row">
+					<blockquote style="width: 80%;">
+						Kot domowy – udomowiony gatunek ssaka z rzędu drapieżnych z rodziny kotowatych.Koty zostały udomowione około 9500 lat temu i są obecnie najpopularniejszymi zwierzętami domowymi na świecie. Gatunek prawdopodobnie pochodzi od kota nubijskiego, przy czym w Europie krzyżował się ze żbikiem. Jest uznawany za gatunek inwazyjny.
+						<footer>Wikipedia</footer>
+					</blockquote>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-2">
+						<img src="grafika/1.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/2.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/3.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="container" id="2" style="display: none;">
+				<div class="row header">
+					<h1>wpis o pieskach<small> bo są nawet lepsze od kotków</small></h1>
+				</div>
+
+				<div class="row">
+					<blockquote style="width: 80%;">
+						Pies domowy – udomowiona forma wilka szarego, ssaka drapieżnego z rodziny psowatych, uznawana przez niektórych za podgatunek wilka. Od czasu jego udomowienia powstało wiele ras, znacznie różniących się morfologią i cechami użytkowymi. Rasy pierwotne powstawały głównie w wyniku presji środowiskowej. Rasy współczesne uzyskano w wyniku doboru sztucznego.
+						<footer>Wikipedia</footer>
+					</blockquote>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-2">
+						<img src="grafika/4.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/5.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/6.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="container" id="3" style="display: none;">
+				<div class="row header">
+					<h1>wpis o chomikach<small> bo też są uważane za urocze</small></h1>
+				</div>
+
+				<div class="row">
+					<blockquote style="width: 80%;">
+						Chomiki – podrodzina gryzoni z rodziny chomikowatych. Do rodziny chomikowatych zalicza się blisko 300 gatunków. Mysz domowa, myszarka leśna, suwak mongolski i inne myszowate są dalekimi krewnymi chomików. Jako zwierzęta domowe hodowane bywają: chomiczek syryjski, chomicznik malutki, chomik chiński, chomicznik dżungarski i chomicznik zabajkalski.
+						<footer>Wikipedia</footer>
+					</blockquote>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-2">
+						<img src="grafika/7.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/8.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/9.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="container" id="4" style="display: none;">
+				<div class="row header">
+					<h1>wpis o koniach<small> bo powoli kończą mi się urocze zwierzęta</small></h1>
+				</div>
+
+				<div class="row">
+					<blockquote style="width: 80%;">
+						Konie – Koń po raz pierwszy został udomowiony prawdopodobnie na terenie północnego Kazachstanu w okresie kultury Botai tj. około 3,5 tys. lat p.n.e., natomiast ludność europejska dokonała tego ok. 1,5 tys. lat p.n.e. Obecnie przedstawiciele 18 z 21 współczesnych ras hodowlanych pochodzą od dwóch linii – arabskiej i turkmeńskiej.
+						<footer>Wikipedia</footer>
+					</blockquote>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-2">
+						<img src="grafika/10.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/11.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/12.png">
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container" id="5" style="display: none;">
+				<div class="row header">
+					<h1>wpis o kuokach<small> bo zbyt mało osób wie o istnieniu tego zwierzęcia</small></h1>
+				</div>
+
+				<div class="row">
+					<blockquote style="width: 80%;">
+						Kuoka – gatunek ssaka z rodziny kangurowatych, jedyny przedstawiciel rodzaju kuoka. Występuje w południowo-zachodniej Australii oraz wyspach Rottnest i Bald, gdzie jest liczniejszy niż na kontynencie. Kuoka krótkoogonowa jest średniej wielkości (długość: 40–54 cm, długość ogona: 24,5–31 cm, masa: 2,7–4,2 kg) torbaczem zamieszkującym lasy tropikalne. Prowadzi nocny, ziemny tryb życia, dzień spędzając w gęstych zaroślach.
+						<footer>Wikipedia</footer>
+					</blockquote>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-2">
+						<img src="grafika/13.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/14.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/15.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="container" id="6" style="display: none;">
+				<div class="row header">
+					<h1>wpis o pandach<small> tak o</small></h1>
+				</div>
+
+				<div class="row">
+					<blockquote style="width: 80%;">
+						panda – niedźwiedź bambusowy – gatunek drapieżnego ssaka z rodziny niedźwiedziowatych. Panda wielka zamieszkuje lasy bambusowe na wysokości 1200–4100 m n.p.m. (zimą schodzi do 800 m n.p.m.). Jej przynależność do drapieżnych nie ulega wątpliwości, jednak w rzeczywistości odżywia się pędami roślin (głównie bambusa), nie gardzi też rybami i małymi gryzoniami.
+						<footer>Wikipedia</footer>
+					</blockquote>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-2">
+						<img src="grafika/16.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/17.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/18.png">
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container" id="7" style="display: none;">
+				<div class="row header">
+					<h1>wpis o koalach<small> mają teraz ciężki okeres</small></h1>
+				</div>
+
+				<div class="row">
+					<blockquote style="width: 80%;">
+						koala – gatunek torbacza z rodziny koalowatych, nadrzewne zwierzę roślinożerne, zamieszkujące wschodnią Australię. Koala schodzi na ziemię tylko po to, aby przejść na kolejne drzewo. Żyje samotnie lub w niewielkich grupach złożonych z samca i kilku samic. Jest jedynym współcześnie żyjącym przedstawicielem rodzaju Phascolarctos.
+						<footer>Wikipedia</footer>
+					</blockquote>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-2">
+						<img src="grafika/19.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/20.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/21.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="container" id="8" style="display: none;">
+				<div class="row header">
+					<h1>wpis o lemurach<small> serio, kończą mi się pomysły</small></h1>
+				</div>
+
+				<div class="row">
+					<blockquote style="width: 80%;">
+						lemur – (Lemur catta) – gatunek ssaka z rodziny lemurowatych (Lemuridae), jedyny przedstawiciel rodzaju Lemur. Rodzaj i gatunek po raz pierwszy opisał Karol Linneusz w 1758 roku w jego dziele Systema Naturae. Jako miejsce typowe autor wskazał Madagaskar (łac. Habitat in Madagascar).
+						<footer>Wikipedia</footer>
+					</blockquote>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-2">
+						<img src="grafika/22.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/23.png">
+					</div>
+
+					<div class="col-sm-2">
+						<img src="grafika/24.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="container" id="9" style="display: none;">
+				<div class="row header">
+					<h1>wpis o wpisach użytkowników<small> bo dyskusje na forach internetowych "mają sens"</small></h1>
+				</div>
+
+				<div class="row">
+					<input type="text" placeholder="twoje imię" name="imie" id="imie" style="width: 300px;"><br>
+					<textarea name="koment" style="width: 300px;" id="koment">twoj wpis...</textarea><br>
+					<button class="btn btn-default" onclick="dodaj_komentarz()" style="width:300px; margin-left: -1px; margin-bottom: 15px;">dodaj komentarz!</button>
+				</div>
+
+				<div class="row" id="tresc">
+
+				</div>
+			</div>
+
+		</article>
+	</section>
+</body>
+</html>
